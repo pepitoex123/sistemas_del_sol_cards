@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Montserrat";
+}
+
+
+.header {
+    background-color: #F06508;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+/* Start Megapromo Section */
+
+.header__section__megapromo {
+
+}
+
+
+
+
+/* End Megapromo Section */
+
+
+
+/* Start Oportunidades Section */
+
+.header__section__oportunidades {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header__section__oportunidades__black {
+    color: black;
+    font-size: 40px;
+    transform: translateY(-3px);
+}
+
+.header__section__oportunidades__white {
+    color: white;
+    font-size: 40px;
+    transform: translateY(-3px);
+}
+
+
+/* End Oportunidades Section */
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 25% 0px 25%;
+    justify-content: space-around;
+}
+
+
+
+/* Start Main Info Section */
+
+.main__section__info__title {
+    font-size: 30px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.main__section__info__body {
+    font-size: 18px;
+}
+
+.main__section__info__title h4 {
+    margin-bottom: -10px;
+}
+
+.main__section__info__title--normal {
+    font-weight: 400;
+}
+
+.main__section__info__title--orange {
+    color: #F06508;
+}
+
+.main__section__info__title--bold {
+    font-weight: 700;
+}
+
+
+/* End Main Info Section */
+
+
+/* Start Main Form Section */
+
+
+.main__section__form {
+    background-color: #DDDDDD;
+    min-width: 360px;
+    padding-top: 10px;
+}
+
+
+
+.main__section__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section__form h5 {
+    text-align: center;
+}
+
+.main__section__form form input {
+    margin: 10px;
+    border: none;
+    padding: 4px 0px;
+}
+
+.main__section__form__submit {
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    justify-self: flex-start;
+    width: 30%;
+    align-self: flex-end;
+    background-color: #DDDDDD;
+}
+
+
+/* End Main Form Section */
+
+
+
+/* Start PreFooter Section */
+
+.prefooter__cta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.prefooter__cta__button {
+    margin-top: 20px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4CA52F;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/* End PreFooter Section */
+
+
+/* Start Footer Section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+footer p {
+    font-weight: 300;
+}
+
+footer p span {
+    margin-left: 20px;
+}
+
+
+/* End Footer Section */
+
+
+@media screen and (max-width: 1070px ){
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__section__oportunidades__black,
+    .header__section__oportunidades__white{
+        font-size: 30px;
+        transform: translateY(-3px);
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 60px 25% 0px 25%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p span {
+        margin-left: 0px;
+        align-text: center;
+    }
+
+}
