@@ -14,8 +14,8 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 
@@ -44,13 +44,12 @@ html {
 .header__section__oportunidades__black {
     color: black;
     font-size: 40px;
-    transform: translateY(-3px);
+    line-height: 0.9em;
 }
 
 .header__section__oportunidades__white {
     color: white;
     font-size: 40px;
-    transform: translateY(-3px);
 }
 
 
@@ -60,14 +59,17 @@ html {
 .main {
     display: flex;
     flex-direction: row;
-    padding: 60px 25% 0px 25%;
+    padding: 60px 10% 0px 10%;
     justify-content: space-around;
 }
 
 
 
 /* Start Main Info Section */
-
+.main__section__info{
+    width: 50%;
+    padding: 0px 5% 0px 0px;
+}
 .main__section__info__title {
     font-size: 30px;
     letter-spacing: -2px;
@@ -75,11 +77,14 @@ html {
 }
 
 .main__section__info__body {
-    font-size: 18px;
+    font-size: 22px;
 }
 
+.pp{
+    margin: 15px 0px;
+}
 .main__section__info__title h4 {
-    margin-bottom: -10px;
+    margin-bottom: -6px;
 }
 
 .main__section__info__title--normal {
@@ -92,6 +97,7 @@ html {
 
 .main__section__info__title--bold {
     font-weight: 700;
+    margin-bottom: 30px!important;
 }
 
 
@@ -103,10 +109,13 @@ html {
 
 .main__section__form {
     background-color: #DDDDDD;
-    min-width: 360px;
-    padding-top: 10px;
+    padding:  10px 2%;
+    width: 40%;
 }
 
+.pp_form{
+    padding: 30px 2%;
+}
 
 
 .main__section__form form {
@@ -121,7 +130,8 @@ html {
 .main__section__form form input {
     margin: 10px;
     border: none;
-    padding: 4px 0px;
+    padding: 6px 4px;
+    outline: none;
 }
 
 .main__section__form__submit {
@@ -132,6 +142,7 @@ html {
     width: 30%;
     align-self: flex-end;
     background-color: #DDDDDD;
+    cursor: pointer;
 }
 
 
@@ -140,6 +151,10 @@ html {
 
 
 /* Start PreFooter Section */
+.prefooter__cta__message{
+    margin-top: 80px;
+    text-align: center;
+}
 
 .prefooter__cta {
     display: flex;
@@ -159,6 +174,8 @@ html {
     background-color: #4CA52F;
     color: white;
     font-weight: 700;
+    font-size: 1.4em;
+    cursor: pointer;
 }
 
 
@@ -178,7 +195,9 @@ footer {
 
 
 footer p {
-    font-weight: 300;
+    font-weight: 300;    
+    margin: 20px 0% 60px 0%;
+
 }
 
 footer p span {
@@ -191,22 +210,41 @@ footer p span {
 
 @media screen and (max-width: 1070px ){
     .header {
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        text-align: center;
     }
-    .header__section__oportunidades__black,
-    .header__section__oportunidades__white{
-        font-size: 30px;
-        transform: translateY(-3px);
+    .img_logo{
+        width: 60%;
+        margin-bottom: 30px;
     }
+    
 
     .main {
-        flex-direction: column;
-        padding: 60px 25% 0px 25%;
-        align-items: center;
-        justify-content: center;
+        display: block;
     }
-
+    .main__section__info{
+        width: 100%;
+    }
+    .main__section__form{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .main__section__form form input{
+        font-size: 1.4em;
+        padding: 10px;
+    }
+    .prefooter__cta__message{
+        font-size: 1.6em;
+    }
+    .prefooter__cta__button{
+        font-size: 1.6em;
+    }
+    footer{
+        display: block;
+        text-align: center;
+        margin: 40px 0%;
+        padding-bottom: 200px;
+    }
     footer p span {
         margin-left: 0px;
         align-text: center;
