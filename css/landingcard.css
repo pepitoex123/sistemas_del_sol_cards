@@ -209,6 +209,12 @@ footer p span {
 
 
 @media screen and (max-width: 1070px ){
+
+    .header__section__megapromo {
+        transform: translateX(-20px);
+    }
+
+
     .header {
         display: block;
         text-align: center;
@@ -243,11 +249,15 @@ footer p span {
         display: block;
         text-align: center;
         margin: 40px 0%;
-        padding-bottom: 200px;
+        padding-bottom: -20px;
     }
     footer p span {
         margin-left: 0px;
         align-text: center;
+    }
+
+    footer img {
+        width: 200px;
     }
 
 }
